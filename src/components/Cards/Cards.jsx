@@ -3,6 +3,9 @@ import { getImageData } from "../../api";
 import Card from "../Card/Card";
 import styles from "./Cards.module.css";
 
+/**Holds the name of the variable that has saved the images */
+const LOCAL_IMAGES_NAME = "images";
+
 const Cards = () => {
   const [images, setImages] = useState([]);
 
@@ -13,8 +16,32 @@ const Cards = () => {
       setImages(data);
     };
 
-    getData();
+    //Get images from localStorage
+    const loadedImages = loadImages();
+
+    //If the images exist, then set the state variable otherwise get images using API
+    loadedImages && loadedImages[0] ? setImages(loadedImages) : getData();
   }, []);
+
+  /**Whenever image state variable changes, save it to localStorage */
+  useEffect(() => {
+    if (images && images[0]) {
+      saveImages();
+    }
+  }, [images]);
+
+  /**Saves images to localStorage */
+  const saveImages = () => {
+    localStorage.setItem(LOCAL_IMAGES_NAME, JSON.stringify(images));
+  };
+
+  /**Loads images from localStorage */
+  const loadImages = () => {
+    let loadedImages = localStorage.getItem(LOCAL_IMAGES_NAME);
+    loadedImages = JSON.parse(loadedImages);
+
+    return loadedImages;
+  };
 
   /**Finds image with corresponding date in images and toggles liked attribute */
   const toggleLikeImage = (imageDate) => {

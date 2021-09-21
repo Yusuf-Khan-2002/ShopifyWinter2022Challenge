@@ -7,7 +7,7 @@ const Card = ({ title, url, captureDate, mediaType, explanation, liked, toggleLi
       <h1>{title}</h1>
       <h2>{captureDate}</h2>
       {mediaType === "image" ? (
-        <img className={styles.image} src={url} />
+        <img className={styles.image} src={url} alt="" />
       ) : (
         <iframe className={styles.video} title={captureDate} src={url} />
       )}
