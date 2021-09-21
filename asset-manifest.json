@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ShopifyWinter2022Challenge/static/css/main.c2aba096.chunk.css",
+    "main.js": "/ShopifyWinter2022Challenge/static/js/main.c3512922.chunk.js",
+    "main.js.map": "/ShopifyWinter2022Challenge/static/js/main.c3512922.chunk.js.map",
+    "runtime-main.js": "/ShopifyWinter2022Challenge/static/js/runtime-main.4df8348d.js",
+    "runtime-main.js.map": "/ShopifyWinter2022Challenge/static/js/runtime-main.4df8348d.js.map",
+    "static/js/2.0558533f.chunk.js": "/ShopifyWinter2022Challenge/static/js/2.0558533f.chunk.js",
+    "static/js/2.0558533f.chunk.js.map": "/ShopifyWinter2022Challenge/static/js/2.0558533f.chunk.js.map",
+    "index.html": "/ShopifyWinter2022Challenge/index.html",
+    "static/css/main.c2aba096.chunk.css.map": "/ShopifyWinter2022Challenge/static/css/main.c2aba096.chunk.css.map",
+    "static/js/2.0558533f.chunk.js.LICENSE.txt": "/ShopifyWinter2022Challenge/static/js/2.0558533f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4df8348d.js",
+    "static/js/2.0558533f.chunk.js",
+    "static/css/main.c2aba096.chunk.css",
+    "static/js/main.c3512922.chunk.js"
+  ]
+}
